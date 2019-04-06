@@ -1,0 +1,101 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 3
+Design : topcell
+Version: I-2013.12-SP3
+Date   : Sun Dec 16 13:20:39 2018
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: ss_v1p08_125c   Library: scc65nll_hs_rvt_ss_v1p08_125c_ccs
+Wire Load Model Mode: top
+
+  Startpoint: bi[27] (input port clocked by clk)
+  Endpoint: pe1/pe3/q_reg[6]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.10       0.10
+  input external delay                    -0.01       0.09 f
+  bi[27] (in)                              0.01       0.10 f
+  pe1/pe3/q_reg[6]/D (DRNQHSV2)            0.00       0.10 f
+  data arrival time                                   0.10
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.10       0.10
+  clock uncertainty                        0.10       0.20
+  pe1/pe3/q_reg[6]/CK (DRNQHSV2)           0.00       0.20 r
+  library hold time                        0.00       0.20
+  data required time                                  0.20
+  -----------------------------------------------------------
+  data required time                                  0.20
+  data arrival time                                  -0.10
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.11
+
+
+  Startpoint: bi[29] (input port clocked by clk)
+  Endpoint: pe1/pe3/q_reg[4]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.10       0.10
+  input external delay                    -0.01       0.09 f
+  bi[29] (in)                              0.01       0.10 f
+  pe1/pe3/q_reg[4]/D (DRNQHSV2)            0.00       0.10 f
+  data arrival time                                   0.10
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.10       0.10
+  clock uncertainty                        0.10       0.20
+  pe1/pe3/q_reg[4]/CK (DRNQHSV2)           0.00       0.20 r
+  library hold time                        0.00       0.20
+  data required time                                  0.20
+  -----------------------------------------------------------
+  data required time                                  0.20
+  data arrival time                                  -0.10
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.11
+
+
+  Startpoint: bi[30] (input port clocked by clk)
+  Endpoint: pe1/pe3/q_reg[3]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.10       0.10
+  input external delay                    -0.01       0.09 f
+  bi[30] (in)                              0.01       0.10 f
+  pe1/pe3/q_reg[3]/D (DRNQHSV2)            0.00       0.10 f
+  data arrival time                                   0.10
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.10       0.10
+  clock uncertainty                        0.10       0.20
+  pe1/pe3/q_reg[3]/CK (DRNQHSV2)           0.00       0.20 r
+  library hold time                        0.00       0.20
+  data required time                                  0.20
+  -----------------------------------------------------------
+  data required time                                  0.20
+  data arrival time                                  -0.10
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.11
+
+
+1

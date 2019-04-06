@@ -1,0 +1,335 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 3
+Design : topcell
+Version: I-2013.12-SP3
+Date   : Sun Dec 16 13:20:39 2018
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: ss_v1p08_125c   Library: scc65nll_hs_rvt_ss_v1p08_125c_ccs
+Wire Load Model Mode: top
+
+  Startpoint: pe3/pe12/q_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: pe3/pe17/q_reg[5]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.10       0.10
+  pe3/pe12/q_reg[1]/CK (DRNQHSV4)          0.00 #     0.10 r
+  pe3/pe12/q_reg[1]/Q (DRNQHSV4)           0.23       0.33 f
+  U28314/ZN (CLKNAND2HSV3)                 0.04       0.37 r
+  U28318/ZN (XNOR2HSV4)                    0.15       0.52 f
+  U28315/ZN (XNOR2HSV4)                    0.13       0.65 f
+  U29070/ZN (AOI21HSV4)                    0.08       0.73 r
+  U29069/ZN (XNOR2HSV4)                    0.15       0.88 f
+  U27626/ZN (CLKNAND2HSV2)                 0.06       0.94 r
+  U27207/ZN (CLKNAND2HSV4)                 0.06       1.00 f
+  U27478/ZN (NAND2HSV2)                    0.05       1.05 r
+  U41749/Z (XOR3HSV2)                      0.15       1.20 f
+  U41750/ZN (XNOR2HSV4)                    0.15       1.36 r
+  U41751/ZN (XNOR2HSV4)                    0.15       1.50 f
+  U41752/ZN (XNOR2HSV4)                    0.16       1.66 r
+  U28904/ZN (XNOR2HSV2)                    0.15       1.81 f
+  U41846/ZN (CLKNHSV2)                     0.04       1.85 r
+  U27422/ZN (CLKNAND2HSV2)                 0.04       1.89 f
+  U26828/ZN (NAND3HSV3)                    0.04       1.93 r
+  U41861/ZN (NAND3HSV4)                    0.08       2.02 f
+  U26721/ZN (CLKNAND2HSV3)                 0.06       2.08 r
+  U28672/ZN (CLKNAND2HSV4)                 0.05       2.13 f
+  U28979/ZN (NAND3HSV4)                    0.05       2.19 r
+  U27539/ZN (CLKNAND2HSV3)                 0.05       2.23 f
+  U42043/ZN (AOI21HSV4)                    0.08       2.31 r
+  U42044/ZN (XNOR2HSV4)                    0.17       2.48 f
+  U27375/ZN (CLKNAND2HSV4)                 0.04       2.52 r
+  U30231/ZN (INHSV2)                       0.04       2.56 f
+  U28156/ZN (NOR2HSV4)                     0.05       2.61 r
+  U28157/ZN (CLKNAND2HSV4)                 0.06       2.67 f
+  U28981/ZN (NAND3HSV4)                    0.06       2.73 r
+  U28982/ZN (CLKNAND2HSV2)                 0.06       2.78 f
+  U28032/ZN (XNOR2HSV4)                    0.16       2.94 r
+  U28030/ZN (XNOR2HSV4)                    0.18       3.12 f
+  U27483/ZN (MUX2NHSV4)                    0.09       3.21 f
+  U26356/ZN (NOR2HSV4)                     0.08       3.28 r
+  U26355/ZN (NAND2HSV4)                    0.06       3.35 f
+  U28342/ZN (NAND3HSV4)                    0.05       3.40 r
+  U29784/ZN (CLKNAND2HSV2)                 0.05       3.45 f
+  U25900/ZN (XNOR2HSV4)                    0.16       3.61 r
+  U28023/ZN (XNOR2HSV4)                    0.18       3.78 f
+  U46934/ZN (XNOR2HSV4)                    0.15       3.93 r
+  U46937/ZN (AOI21HSV4)                    0.05       3.98 f
+  U26445/ZN (AOI22HSV4)                    0.09       4.07 r
+  U25953/ZN (CLKNAND2HSV3)                 0.08       4.15 f
+  U27596/ZN (AOI31HSV2)                    0.10       4.25 r
+  U27595/ZN (CLKNAND2HSV2)                 0.06       4.30 f
+  U28186/ZN (XNOR2HSV4)                    0.17       4.47 r
+  U28272/ZN (CLKNAND2HSV4)                 0.07       4.54 f
+  U28271/ZN (CLKNAND2HSV4)                 0.07       4.61 r
+  U25928/ZN (CLKNAND2HSV2)                 0.05       4.65 f
+  U25927/ZN (INHSV2)                       0.04       4.70 r
+  U26484/ZN (CLKNAND2HSV4)                 0.05       4.75 f
+  U28290/ZN (CLKNAND2HSV3)                 0.04       4.78 r
+  U28289/ZN (CLKNAND2HSV3)                 0.04       4.83 f
+  U47616/ZN (NAND2HSV4)                    0.05       4.88 r
+  U47617/ZN (INHSV4)                       0.04       4.92 f
+  U26375/ZN (NAND2HSV4)                    0.04       4.97 r
+  U26374/ZN (CLKNAND2HSV4)                 0.04       5.01 f
+  U26373/ZN (INHSV4)                       0.04       5.04 r
+  U29257/ZN (CLKNAND2HSV4)                 0.05       5.09 f
+  U29258/ZN (AOI21HSV4)                    0.10       5.18 r
+  U29187/ZN (XNOR2HSV4)                    0.16       5.34 f
+  U28178/ZN (CLKNAND2HSV2)                 0.06       5.41 r
+  U26237/ZN (CLKNAND2HSV3)                 0.05       5.45 f
+  U28088/ZN (OAI21HSV4)                    0.09       5.54 r
+  U28110/ZN (AOI21HSV4)                    0.09       5.63 f
+  U27655/ZN (INHSV2)                       0.05       5.68 r
+  U49918/ZN (CLKNAND2HSV1)                 0.05       5.73 f
+  U49919/ZN (NAND3HSV2)                    0.05       5.78 r
+  U27547/ZN (NAND3HSV4)                    0.08       5.86 f
+  U27546/ZN (XNOR2HSV4)                    0.15       6.00 r
+  U29136/ZN (XNOR2HSV4)                    0.12       6.13 f
+  U25962/ZN (NOR2HSV4)                     0.06       6.18 r
+  U27142/ZN (CLKNAND2HSV4)                 0.04       6.23 f
+  U27141/ZN (NAND2HSV4)                    0.05       6.28 r
+  U49929/ZN (INHSV4)                       0.04       6.32 f
+  U26404/ZN (CLKNHSV2)                     0.05       6.36 r
+  U58663/ZN (NAND2HSV2)                    0.07       6.44 f
+  U58665/Z (XOR3HSV2)                      0.20       6.63 r
+  pe3/pe17/q_reg[5]/D (DRNQHSV2)           0.00       6.63 r
+  data arrival time                                   6.63
+
+  clock clk (rise edge)                    0.50       0.50
+  clock network delay (ideal)              0.10       0.60
+  clock uncertainty                       -0.10       0.50
+  pe3/pe17/q_reg[5]/CK (DRNQHSV2)          0.00       0.50 r
+  library setup time                      -0.12       0.38
+  data required time                                  0.38
+  -----------------------------------------------------------
+  data required time                                  0.38
+  data arrival time                                  -6.63
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -6.25
+
+
+  Startpoint: pe3/pe12/q_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: pe3/pe17/q_reg[24]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.10       0.10
+  pe3/pe12/q_reg[1]/CK (DRNQHSV4)          0.00 #     0.10 r
+  pe3/pe12/q_reg[1]/Q (DRNQHSV4)           0.23       0.33 f
+  U28314/ZN (CLKNAND2HSV3)                 0.04       0.37 r
+  U28318/ZN (XNOR2HSV4)                    0.15       0.52 f
+  U28315/ZN (XNOR2HSV4)                    0.13       0.65 f
+  U29070/ZN (AOI21HSV4)                    0.08       0.73 r
+  U29069/ZN (XNOR2HSV4)                    0.15       0.88 f
+  U27626/ZN (CLKNAND2HSV2)                 0.06       0.94 r
+  U27207/ZN (CLKNAND2HSV4)                 0.06       1.00 f
+  U27478/ZN (NAND2HSV2)                    0.05       1.05 r
+  U41749/Z (XOR3HSV2)                      0.15       1.20 f
+  U41750/ZN (XNOR2HSV4)                    0.15       1.36 r
+  U41751/ZN (XNOR2HSV4)                    0.15       1.50 f
+  U41752/ZN (XNOR2HSV4)                    0.16       1.66 r
+  U28904/ZN (XNOR2HSV2)                    0.15       1.81 f
+  U41846/ZN (CLKNHSV2)                     0.04       1.85 r
+  U27422/ZN (CLKNAND2HSV2)                 0.04       1.89 f
+  U26828/ZN (NAND3HSV3)                    0.04       1.93 r
+  U41861/ZN (NAND3HSV4)                    0.08       2.02 f
+  U26721/ZN (CLKNAND2HSV3)                 0.06       2.08 r
+  U28672/ZN (CLKNAND2HSV4)                 0.05       2.13 f
+  U28979/ZN (NAND3HSV4)                    0.05       2.19 r
+  U27539/ZN (CLKNAND2HSV3)                 0.05       2.23 f
+  U42043/ZN (AOI21HSV4)                    0.08       2.31 r
+  U42044/ZN (XNOR2HSV4)                    0.17       2.48 f
+  U27375/ZN (CLKNAND2HSV4)                 0.04       2.52 r
+  U30231/ZN (INHSV2)                       0.04       2.56 f
+  U28156/ZN (NOR2HSV4)                     0.05       2.61 r
+  U28157/ZN (CLKNAND2HSV4)                 0.06       2.67 f
+  U28981/ZN (NAND3HSV4)                    0.06       2.73 r
+  U28982/ZN (CLKNAND2HSV2)                 0.06       2.78 f
+  U28032/ZN (XNOR2HSV4)                    0.16       2.94 r
+  U28030/ZN (XNOR2HSV4)                    0.18       3.12 f
+  U27483/ZN (MUX2NHSV4)                    0.09       3.21 f
+  U26356/ZN (NOR2HSV4)                     0.08       3.28 r
+  U26355/ZN (NAND2HSV4)                    0.06       3.35 f
+  U28342/ZN (NAND3HSV4)                    0.05       3.40 r
+  U29784/ZN (CLKNAND2HSV2)                 0.05       3.45 f
+  U25900/ZN (XNOR2HSV4)                    0.16       3.61 r
+  U28023/ZN (XNOR2HSV4)                    0.18       3.78 f
+  U46934/ZN (XNOR2HSV4)                    0.15       3.93 r
+  U46937/ZN (AOI21HSV4)                    0.05       3.98 f
+  U26445/ZN (AOI22HSV4)                    0.09       4.07 r
+  U25953/ZN (CLKNAND2HSV3)                 0.08       4.15 f
+  U27596/ZN (AOI31HSV2)                    0.10       4.25 r
+  U27595/ZN (CLKNAND2HSV2)                 0.06       4.30 f
+  U28186/ZN (XNOR2HSV4)                    0.17       4.47 r
+  U28272/ZN (CLKNAND2HSV4)                 0.07       4.54 f
+  U28271/ZN (CLKNAND2HSV4)                 0.07       4.61 r
+  U25928/ZN (CLKNAND2HSV2)                 0.05       4.65 f
+  U25927/ZN (INHSV2)                       0.04       4.70 r
+  U26484/ZN (CLKNAND2HSV4)                 0.05       4.75 f
+  U28290/ZN (CLKNAND2HSV3)                 0.04       4.78 r
+  U28289/ZN (CLKNAND2HSV3)                 0.04       4.83 f
+  U47616/ZN (NAND2HSV4)                    0.05       4.88 r
+  U47617/ZN (INHSV4)                       0.04       4.92 f
+  U26375/ZN (NAND2HSV4)                    0.04       4.97 r
+  U26374/ZN (CLKNAND2HSV4)                 0.04       5.01 f
+  U26373/ZN (INHSV4)                       0.04       5.04 r
+  U29257/ZN (CLKNAND2HSV4)                 0.05       5.09 f
+  U29258/ZN (AOI21HSV4)                    0.10       5.18 r
+  U29187/ZN (XNOR2HSV4)                    0.16       5.34 f
+  U28178/ZN (CLKNAND2HSV2)                 0.06       5.41 r
+  U26237/ZN (CLKNAND2HSV3)                 0.05       5.45 f
+  U28088/ZN (OAI21HSV4)                    0.09       5.54 r
+  U28110/ZN (AOI21HSV4)                    0.09       5.63 f
+  U27655/ZN (INHSV2)                       0.05       5.68 r
+  U49918/ZN (CLKNAND2HSV1)                 0.05       5.73 f
+  U49919/ZN (NAND3HSV2)                    0.05       5.78 r
+  U27547/ZN (NAND3HSV4)                    0.08       5.86 f
+  U27546/ZN (XNOR2HSV4)                    0.15       6.00 r
+  U29136/ZN (XNOR2HSV4)                    0.12       6.13 f
+  U25962/ZN (NOR2HSV4)                     0.06       6.18 r
+  U27142/ZN (CLKNAND2HSV4)                 0.04       6.23 f
+  U27141/ZN (NAND2HSV4)                    0.05       6.28 r
+  U49929/ZN (INHSV4)                       0.04       6.32 f
+  U26404/ZN (CLKNHSV2)                     0.05       6.36 r
+  U59261/ZN (NAND2HSV2)                    0.07       6.44 f
+  U59263/Z (XOR3HSV2)                      0.20       6.63 r
+  pe3/pe17/q_reg[24]/D (DRNQHSV2)          0.00       6.63 r
+  data arrival time                                   6.63
+
+  clock clk (rise edge)                    0.50       0.50
+  clock network delay (ideal)              0.10       0.60
+  clock uncertainty                       -0.10       0.50
+  pe3/pe17/q_reg[24]/CK (DRNQHSV2)         0.00       0.50 r
+  library setup time                      -0.12       0.38
+  data required time                                  0.38
+  -----------------------------------------------------------
+  data required time                                  0.38
+  data arrival time                                  -6.63
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -6.25
+
+
+  Startpoint: pe3/pe12/q_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: pe3/pe17/q_reg[8]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.10       0.10
+  pe3/pe12/q_reg[1]/CK (DRNQHSV4)          0.00 #     0.10 r
+  pe3/pe12/q_reg[1]/Q (DRNQHSV4)           0.23       0.33 f
+  U28314/ZN (CLKNAND2HSV3)                 0.04       0.37 r
+  U28318/ZN (XNOR2HSV4)                    0.15       0.52 f
+  U28315/ZN (XNOR2HSV4)                    0.13       0.65 f
+  U29070/ZN (AOI21HSV4)                    0.08       0.73 r
+  U29069/ZN (XNOR2HSV4)                    0.15       0.88 f
+  U27626/ZN (CLKNAND2HSV2)                 0.06       0.94 r
+  U27207/ZN (CLKNAND2HSV4)                 0.06       1.00 f
+  U27478/ZN (NAND2HSV2)                    0.05       1.05 r
+  U41749/Z (XOR3HSV2)                      0.15       1.20 f
+  U41750/ZN (XNOR2HSV4)                    0.15       1.36 r
+  U41751/ZN (XNOR2HSV4)                    0.15       1.50 f
+  U41752/ZN (XNOR2HSV4)                    0.16       1.66 r
+  U28904/ZN (XNOR2HSV2)                    0.15       1.81 f
+  U41846/ZN (CLKNHSV2)                     0.04       1.85 r
+  U27422/ZN (CLKNAND2HSV2)                 0.04       1.89 f
+  U26828/ZN (NAND3HSV3)                    0.04       1.93 r
+  U41861/ZN (NAND3HSV4)                    0.08       2.02 f
+  U26721/ZN (CLKNAND2HSV3)                 0.06       2.08 r
+  U28672/ZN (CLKNAND2HSV4)                 0.05       2.13 f
+  U28979/ZN (NAND3HSV4)                    0.05       2.19 r
+  U27539/ZN (CLKNAND2HSV3)                 0.05       2.23 f
+  U42043/ZN (AOI21HSV4)                    0.08       2.31 r
+  U42044/ZN (XNOR2HSV4)                    0.17       2.48 f
+  U27375/ZN (CLKNAND2HSV4)                 0.04       2.52 r
+  U30231/ZN (INHSV2)                       0.04       2.56 f
+  U28156/ZN (NOR2HSV4)                     0.05       2.61 r
+  U28157/ZN (CLKNAND2HSV4)                 0.06       2.67 f
+  U28981/ZN (NAND3HSV4)                    0.06       2.73 r
+  U28982/ZN (CLKNAND2HSV2)                 0.06       2.78 f
+  U28032/ZN (XNOR2HSV4)                    0.16       2.94 r
+  U28030/ZN (XNOR2HSV4)                    0.18       3.12 f
+  U27483/ZN (MUX2NHSV4)                    0.09       3.21 f
+  U26356/ZN (NOR2HSV4)                     0.08       3.28 r
+  U26355/ZN (NAND2HSV4)                    0.06       3.35 f
+  U28342/ZN (NAND3HSV4)                    0.05       3.40 r
+  U29784/ZN (CLKNAND2HSV2)                 0.05       3.45 f
+  U25900/ZN (XNOR2HSV4)                    0.16       3.61 r
+  U28023/ZN (XNOR2HSV4)                    0.18       3.78 f
+  U46934/ZN (XNOR2HSV4)                    0.15       3.93 r
+  U46937/ZN (AOI21HSV4)                    0.05       3.98 f
+  U26445/ZN (AOI22HSV4)                    0.09       4.07 r
+  U25953/ZN (CLKNAND2HSV3)                 0.08       4.15 f
+  U27596/ZN (AOI31HSV2)                    0.10       4.25 r
+  U27595/ZN (CLKNAND2HSV2)                 0.06       4.30 f
+  U28186/ZN (XNOR2HSV4)                    0.17       4.47 r
+  U28272/ZN (CLKNAND2HSV4)                 0.07       4.54 f
+  U28271/ZN (CLKNAND2HSV4)                 0.07       4.61 r
+  U25928/ZN (CLKNAND2HSV2)                 0.05       4.65 f
+  U25927/ZN (INHSV2)                       0.04       4.70 r
+  U26484/ZN (CLKNAND2HSV4)                 0.05       4.75 f
+  U28290/ZN (CLKNAND2HSV3)                 0.04       4.78 r
+  U28289/ZN (CLKNAND2HSV3)                 0.04       4.83 f
+  U47616/ZN (NAND2HSV4)                    0.05       4.88 r
+  U47617/ZN (INHSV4)                       0.04       4.92 f
+  U26375/ZN (NAND2HSV4)                    0.04       4.97 r
+  U26374/ZN (CLKNAND2HSV4)                 0.04       5.01 f
+  U26373/ZN (INHSV4)                       0.04       5.04 r
+  U29257/ZN (CLKNAND2HSV4)                 0.05       5.09 f
+  U29258/ZN (AOI21HSV4)                    0.10       5.18 r
+  U29187/ZN (XNOR2HSV4)                    0.16       5.34 f
+  U28178/ZN (CLKNAND2HSV2)                 0.06       5.41 r
+  U26237/ZN (CLKNAND2HSV3)                 0.05       5.45 f
+  U28088/ZN (OAI21HSV4)                    0.09       5.54 r
+  U28110/ZN (AOI21HSV4)                    0.09       5.63 f
+  U27655/ZN (INHSV2)                       0.05       5.68 r
+  U49918/ZN (CLKNAND2HSV1)                 0.05       5.73 f
+  U49919/ZN (NAND3HSV2)                    0.05       5.78 r
+  U27547/ZN (NAND3HSV4)                    0.08       5.86 f
+  U27546/ZN (XNOR2HSV4)                    0.15       6.00 r
+  U29136/ZN (XNOR2HSV4)                    0.12       6.13 f
+  U25962/ZN (NOR2HSV4)                     0.06       6.18 r
+  U27142/ZN (CLKNAND2HSV4)                 0.04       6.23 f
+  U27141/ZN (NAND2HSV4)                    0.05       6.28 r
+  U49929/ZN (INHSV4)                       0.04       6.32 f
+  U26404/ZN (CLKNHSV2)                     0.05       6.36 r
+  U58361/ZN (NAND2HSV2)                    0.07       6.44 f
+  U58363/Z (XOR3HSV2)                      0.20       6.63 r
+  pe3/pe17/q_reg[8]/D (DRNQHSV2)           0.00       6.63 r
+  data arrival time                                   6.63
+
+  clock clk (rise edge)                    0.50       0.50
+  clock network delay (ideal)              0.10       0.60
+  clock uncertainty                       -0.10       0.50
+  pe3/pe17/q_reg[8]/CK (DRNQHSV2)          0.00       0.50 r
+  library setup time                      -0.12       0.38
+  data required time                                  0.38
+  -----------------------------------------------------------
+  data required time                                  0.38
+  data arrival time                                  -6.63
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -6.25
+
+
+1

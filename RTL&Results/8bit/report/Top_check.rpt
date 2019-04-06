@@ -1,0 +1,93 @@
+ 
+****************************************
+check_design summary:
+Version:     I-2013.12-SP3
+Date:        Sat Dec 15 17:23:13 2018
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     16
+    Feedthrough (LINT-29)                                          16
+
+Cells                                                              16
+    Connected to power or ground (LINT-32)                         15
+    Nets connected to multiple pins on same cell (LINT-33)          1
+
+Nets                                                               24
+    Unloaded nets (LINT-2)                                         24
+--------------------------------------------------------------------------------
+
+Warning: In design 'topcell', net 'bo21[1]' driven by pin 'pe21/bo[1]' has no loads. (LINT-2)
+Warning: In design 'topcell', net 'bo21[2]' driven by pin 'pe21/bo[2]' has no loads. (LINT-2)
+Warning: In design 'topcell', net 'bo21[3]' driven by pin 'pe21/bo[3]' has no loads. (LINT-2)
+Warning: In design 'topcell', net 'bo21[4]' driven by pin 'pe21/bo[4]' has no loads. (LINT-2)
+Warning: In design 'topcell', net 'bo21[5]' driven by pin 'pe21/bo[5]' has no loads. (LINT-2)
+Warning: In design 'topcell', net 'bo21[6]' driven by pin 'pe21/bo[6]' has no loads. (LINT-2)
+Warning: In design 'topcell', net 'bo21[7]' driven by pin 'pe21/bo[7]' has no loads. (LINT-2)
+Warning: In design 'topcell', net 'bo21[8]' driven by pin 'pe21/bo[8]' has no loads. (LINT-2)
+Warning: In design 'topcell', net 'go21[1]' driven by pin 'pe21/go[1]' has no loads. (LINT-2)
+Warning: In design 'topcell', net 'go21[2]' driven by pin 'pe21/go[2]' has no loads. (LINT-2)
+Warning: In design 'topcell', net 'go21[3]' driven by pin 'pe21/go[3]' has no loads. (LINT-2)
+Warning: In design 'topcell', net 'go21[4]' driven by pin 'pe21/go[4]' has no loads. (LINT-2)
+Warning: In design 'topcell', net 'go21[5]' driven by pin 'pe21/go[5]' has no loads. (LINT-2)
+Warning: In design 'topcell', net 'go21[6]' driven by pin 'pe21/go[6]' has no loads. (LINT-2)
+Warning: In design 'topcell', net 'go21[7]' driven by pin 'pe21/go[7]' has no loads. (LINT-2)
+Warning: In design 'topcell', net 'go21[8]' driven by pin 'pe21/go[8]' has no loads. (LINT-2)
+Warning: In design 'topcell', net 'ao21[1]' driven by pin 'pe21/ao[1]' has no loads. (LINT-2)
+Warning: In design 'topcell', net 'ao21[2]' driven by pin 'pe21/ao[2]' has no loads. (LINT-2)
+Warning: In design 'topcell', net 'ao21[3]' driven by pin 'pe21/ao[3]' has no loads. (LINT-2)
+Warning: In design 'topcell', net 'ao21[4]' driven by pin 'pe21/ao[4]' has no loads. (LINT-2)
+Warning: In design 'topcell', net 'ao21[5]' driven by pin 'pe21/ao[5]' has no loads. (LINT-2)
+Warning: In design 'topcell', net 'ao21[6]' driven by pin 'pe21/ao[6]' has no loads. (LINT-2)
+Warning: In design 'topcell', net 'ao21[7]' driven by pin 'pe21/ao[7]' has no loads. (LINT-2)
+Warning: In design 'topcell', net 'ao21[8]' driven by pin 'pe21/ao[8]' has no loads. (LINT-2)
+Warning: In design 'alucell', input port 'ai[8]' is connected directly to output port 'ao[8]'. (LINT-29)
+Warning: In design 'alucell', input port 'ai[7]' is connected directly to output port 'ao[7]'. (LINT-29)
+Warning: In design 'alucell', input port 'ai[6]' is connected directly to output port 'ao[6]'. (LINT-29)
+Warning: In design 'alucell', input port 'ai[5]' is connected directly to output port 'ao[5]'. (LINT-29)
+Warning: In design 'alucell', input port 'ai[4]' is connected directly to output port 'ao[4]'. (LINT-29)
+Warning: In design 'alucell', input port 'ai[3]' is connected directly to output port 'ao[3]'. (LINT-29)
+Warning: In design 'alucell', input port 'ai[2]' is connected directly to output port 'ao[2]'. (LINT-29)
+Warning: In design 'alucell', input port 'ai[1]' is connected directly to output port 'ao[1]'. (LINT-29)
+Warning: In design 'alucell', input port 'gi[8]' is connected directly to output port 'go[8]'. (LINT-29)
+Warning: In design 'alucell', input port 'gi[7]' is connected directly to output port 'go[7]'. (LINT-29)
+Warning: In design 'alucell', input port 'gi[6]' is connected directly to output port 'go[6]'. (LINT-29)
+Warning: In design 'alucell', input port 'gi[5]' is connected directly to output port 'go[5]'. (LINT-29)
+Warning: In design 'alucell', input port 'gi[4]' is connected directly to output port 'go[4]'. (LINT-29)
+Warning: In design 'alucell', input port 'gi[3]' is connected directly to output port 'go[3]'. (LINT-29)
+Warning: In design 'alucell', input port 'gi[2]' is connected directly to output port 'go[2]'. (LINT-29)
+Warning: In design 'alucell', input port 'gi[1]' is connected directly to output port 'go[1]'. (LINT-29)
+Warning: In design 'topcell', a pin on submodule 'pe1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'pih[1]' is connected to logic 0. 
+Warning: In design 'topcell', a pin on submodule 'pe1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'pih[2]' is connected to logic 0. 
+Warning: In design 'topcell', a pin on submodule 'pe1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'pih[3]' is connected to logic 0. 
+Warning: In design 'topcell', a pin on submodule 'pe1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'pih[4]' is connected to logic 0. 
+Warning: In design 'topcell', a pin on submodule 'pe1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'pih[5]' is connected to logic 0. 
+Warning: In design 'topcell', a pin on submodule 'pe1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'pih[6]' is connected to logic 0. 
+Warning: In design 'topcell', a pin on submodule 'pe1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'pih[7]' is connected to logic 0. 
+Warning: In design 'topcell', a pin on submodule 'pe1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'piv[1]' is connected to logic 0. 
+Warning: In design 'topcell', a pin on submodule 'pe1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'piv[2]' is connected to logic 0. 
+Warning: In design 'topcell', a pin on submodule 'pe1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'piv[3]' is connected to logic 0. 
+Warning: In design 'topcell', a pin on submodule 'pe1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'piv[4]' is connected to logic 0. 
+Warning: In design 'topcell', a pin on submodule 'pe1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'piv[5]' is connected to logic 0. 
+Warning: In design 'topcell', a pin on submodule 'pe1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'piv[6]' is connected to logic 0. 
+Warning: In design 'topcell', a pin on submodule 'pe1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'piv[7]' is connected to logic 0. 
+Warning: In design 'topcell', a pin on submodule 'pe1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'pi' is connected to logic 0. 
+Warning: In design 'topcell', the same net is connected to more than one pin on submodule 'pe1'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'pih[1]', 'pih[2]'', 'pih[3]', 'pih[4]', 'pih[5]', 'pih[6]', 'pih[7]', 'piv[1]', 'piv[2]', 'piv[3]', 'piv[4]', 'piv[5]', 'piv[6]', 'piv[7]', 'pi'.
+1

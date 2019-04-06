@@ -1,0 +1,101 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 3
+Design : topcell
+Version: I-2013.12-SP3
+Date   : Sat Dec 15 17:41:37 2018
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: ss_v1p08_125c   Library: scc65nll_hs_rvt_ss_v1p08_125c_ccs
+Wire Load Model Mode: top
+
+  Startpoint: gi[1] (input port clocked by clk)
+  Endpoint: pe1/delaycell2/q_reg[8]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.10       0.10
+  input external delay                                   -0.01       0.09 f
+  gi[1] (in)                                              0.01       0.10 f
+  pe1/delaycell2/q_reg[8]/D (DRNQHSV2)                    0.00       0.10 f
+  data arrival time                                                  0.10
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.10       0.10
+  clock uncertainty                                       0.10       0.20
+  pe1/delaycell2/q_reg[8]/CK (DRNQHSV2)                   0.00       0.20 r
+  library hold time                                       0.00       0.20
+  data required time                                                 0.20
+  --------------------------------------------------------------------------
+  data required time                                                 0.20
+  data arrival time                                                 -0.10
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.11
+
+
+  Startpoint: gi[2] (input port clocked by clk)
+  Endpoint: pe1/delaycell2/q_reg[7]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.10       0.10
+  input external delay                                   -0.01       0.09 f
+  gi[2] (in)                                              0.01       0.10 f
+  pe1/delaycell2/q_reg[7]/D (DRNQHSV2)                    0.00       0.10 f
+  data arrival time                                                  0.10
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.10       0.10
+  clock uncertainty                                       0.10       0.20
+  pe1/delaycell2/q_reg[7]/CK (DRNQHSV2)                   0.00       0.20 r
+  library hold time                                       0.00       0.20
+  data required time                                                 0.20
+  --------------------------------------------------------------------------
+  data required time                                                 0.20
+  data arrival time                                                 -0.10
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.11
+
+
+  Startpoint: ai[6] (input port clocked by clk)
+  Endpoint: pe1/delaycell1/q_reg[3]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.10       0.10
+  input external delay                                   -0.01       0.09 f
+  ai[6] (in)                                              0.01       0.10 f
+  pe1/delaycell1/q_reg[3]/D (DRNQHSV2)                    0.00       0.10 f
+  data arrival time                                                  0.10
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.10       0.10
+  clock uncertainty                                       0.10       0.20
+  pe1/delaycell1/q_reg[3]/CK (DRNQHSV2)                   0.00       0.20 r
+  library hold time                                       0.00       0.20
+  data required time                                                 0.20
+  --------------------------------------------------------------------------
+  data required time                                                 0.20
+  data arrival time                                                 -0.10
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.11
+
+
+1

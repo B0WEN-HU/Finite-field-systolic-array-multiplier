@@ -1,0 +1,163 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 3
+Design : topcell
+Version: I-2013.12-SP3
+Date   : Sat Dec 15 17:41:37 2018
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: ss_v1p08_125c   Library: scc65nll_hs_rvt_ss_v1p08_125c_ccs
+Wire Load Model Mode: top
+
+  Startpoint: pe14/delaycell19/q_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: pe14/delaycell24/q_reg[6]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.10       0.10
+  pe14/delaycell19/q_reg[1]/CK (DRNQHSV4)                 0.00 #     0.10 r
+  pe14/delaycell19/q_reg[1]/Q (DRNQHSV4)                  0.23       0.33 r
+  U9247/ZN (CLKNAND2HSV4)                                 0.06       0.39 f
+  U11371/ZN (CLKNAND2HSV3)                                0.04       0.43 r
+  U11372/ZN (OAI21HSV4)                                   0.05       0.48 f
+  U11375/ZN (XNOR2HSV4)                                   0.14       0.62 r
+  U11376/ZN (XNOR2HSV4)                                   0.12       0.74 f
+  U11377/ZN (AOI22HSV4)                                   0.08       0.82 r
+  U11382/ZN (CLKNAND2HSV4)                                0.07       0.89 f
+  U8709/ZN (NAND2HSV2)                                    0.05       0.94 r
+  U9215/ZN (XNOR2HSV4)                                    0.15       1.09 f
+  U9160/ZN (XNOR2HSV4)                                    0.16       1.26 r
+  U7184/ZN (CLKNAND2HSV4)                                 0.07       1.32 f
+  U6643/ZN (NAND2HSV8)                                    0.05       1.37 r
+  U6991/ZN (CLKNAND2HSV4)                                 0.05       1.42 f
+  U6685/ZN (OAI21HSV4)                                    0.11       1.52 r
+  U6684/ZN (XNOR2HSV4)                                    0.15       1.68 f
+  U6683/ZN (NAND2HSV2)                                    0.05       1.72 r
+  U6682/ZN (CLKNAND2HSV3)                                 0.04       1.76 f
+  U8995/ZN (NOR2HSV4)                                     0.06       1.82 r
+  U8993/ZN (NOR2HSV4)                                     0.04       1.87 f
+  U7042/ZN (INHSV6)                                       0.04       1.91 r
+  U7291/ZN (CLKNAND2HSV2)                                 0.04       1.95 f
+  U13207/Z (XOR2HSV0)                                     0.14       2.08 r
+  pe14/delaycell24/q_reg[6]/D (DRNQHSV2)                  0.00       2.08 r
+  data arrival time                                                  2.08
+
+  clock clk (rise edge)                                   0.50       0.50
+  clock network delay (ideal)                             0.10       0.60
+  clock uncertainty                                      -0.10       0.50
+  pe14/delaycell24/q_reg[6]/CK (DRNQHSV2)                 0.00       0.50 r
+  library setup time                                     -0.11       0.39
+  data required time                                                 0.39
+  --------------------------------------------------------------------------
+  data required time                                                 0.39
+  data arrival time                                                 -2.08
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -1.70
+
+
+  Startpoint: pe14/delaycell19/q_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: pe14/delaycell24/q_reg[5]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.10       0.10
+  pe14/delaycell19/q_reg[1]/CK (DRNQHSV4)                 0.00 #     0.10 r
+  pe14/delaycell19/q_reg[1]/Q (DRNQHSV4)                  0.23       0.33 r
+  U9247/ZN (CLKNAND2HSV4)                                 0.06       0.39 f
+  U11371/ZN (CLKNAND2HSV3)                                0.04       0.43 r
+  U11372/ZN (OAI21HSV4)                                   0.05       0.48 f
+  U11375/ZN (XNOR2HSV4)                                   0.14       0.62 r
+  U11376/ZN (XNOR2HSV4)                                   0.12       0.74 f
+  U11377/ZN (AOI22HSV4)                                   0.08       0.82 r
+  U11382/ZN (CLKNAND2HSV4)                                0.07       0.89 f
+  U8709/ZN (NAND2HSV2)                                    0.05       0.94 r
+  U9215/ZN (XNOR2HSV4)                                    0.15       1.09 f
+  U9160/ZN (XNOR2HSV4)                                    0.16       1.26 r
+  U7184/ZN (CLKNAND2HSV4)                                 0.07       1.32 f
+  U6643/ZN (NAND2HSV8)                                    0.05       1.37 r
+  U6991/ZN (CLKNAND2HSV4)                                 0.05       1.42 f
+  U6685/ZN (OAI21HSV4)                                    0.11       1.52 r
+  U6684/ZN (XNOR2HSV4)                                    0.15       1.68 f
+  U7025/ZN (NAND2HSV4)                                    0.05       1.72 r
+  U9978/ZN (NAND2HSV4)                                    0.05       1.77 f
+  U13248/ZN (NAND2HSV2)                                   0.04       1.81 r
+  U13249/Z (XOR2HSV2)                                     0.15       1.97 f
+  U13250/Z (XOR2HSV0)                                     0.12       2.08 r
+  pe14/delaycell24/q_reg[5]/D (DRNQHSV2)                  0.00       2.08 r
+  data arrival time                                                  2.08
+
+  clock clk (rise edge)                                   0.50       0.50
+  clock network delay (ideal)                             0.10       0.60
+  clock uncertainty                                      -0.10       0.50
+  pe14/delaycell24/q_reg[5]/CK (DRNQHSV2)                 0.00       0.50 r
+  library setup time                                     -0.11       0.39
+  data required time                                                 0.39
+  --------------------------------------------------------------------------
+  data required time                                                 0.39
+  data arrival time                                                 -2.08
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -1.70
+
+
+  Startpoint: pe18/delaycell1/q_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: pe18/delaycell24/q_reg[3]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.10       0.10
+  pe18/delaycell1/q_reg[1]/CK (DRNQHSV4)                  0.00 #     0.10 r
+  pe18/delaycell1/q_reg[1]/Q (DRNQHSV4)                   0.24       0.34 f
+  U6657/ZN (CLKNAND2HSV2)                                 0.06       0.40 r
+  U6656/ZN (XNOR2HSV4)                                    0.12       0.53 f
+  U8881/ZN (XNOR2HSV4)                                    0.15       0.67 r
+  U8880/ZN (XNOR2HSV4)                                    0.12       0.79 f
+  U8839/ZN (XNOR2HSV4)                                    0.13       0.92 r
+  U7487/ZN (XNOR2HSV4)                                    0.17       1.09 f
+  U7486/ZN (OAI21HSV4)                                    0.08       1.18 r
+  U7484/ZN (XNOR2HSV4)                                    0.17       1.35 f
+  U13967/ZN (AOI21HSV0)                                   0.12       1.47 r
+  U7023/ZN (CLKNAND2HSV2)                                 0.10       1.56 f
+  U7022/ZN (XNOR2HSV4)                                    0.15       1.71 r
+  U7087/ZN (CLKNAND2HSV4)                                 0.04       1.75 f
+  U13991/ZN (CLKNAND2HSV4)                                0.05       1.80 r
+  U14932/ZN (AOI21HSV4)                                   0.03       1.84 f
+  U7627/ZN (NAND2HSV4)                                    0.05       1.88 r
+  U16128/ZN (NAND2HSV2)                                   0.06       1.94 f
+  U16129/Z (XOR3HSV2)                                     0.13       2.08 r
+  pe18/delaycell24/q_reg[3]/D (DRNQHSV1)                  0.00       2.08 r
+  data arrival time                                                  2.08
+
+  clock clk (rise edge)                                   0.50       0.50
+  clock network delay (ideal)                             0.10       0.60
+  clock uncertainty                                      -0.10       0.50
+  pe18/delaycell24/q_reg[3]/CK (DRNQHSV1)                 0.00       0.50 r
+  library setup time                                     -0.12       0.38
+  data required time                                                 0.38
+  --------------------------------------------------------------------------
+  data required time                                                 0.38
+  data arrival time                                                 -2.08
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -1.70
+
+
+1

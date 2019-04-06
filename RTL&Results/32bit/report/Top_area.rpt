@@ -1,0 +1,32 @@
+ 
+****************************************
+Report : area
+Design : topcell
+Version: I-2013.12-SP3
+Date   : Sun Dec 16 13:20:38 2018
+****************************************
+
+Information: Updating design information... (UID-85)
+Warning: Design 'topcell' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Library(s) Used:
+
+    scc65nll_hs_rvt_ss_v1p08_125c_ccs (File: /net/dellr900b/export/SMIC_65nm_LL/SCC65NLL_HS/SCC65NLL_HS_RVT_syn_V1.1a/SCC65NLL_HS_RVT_V1p1a/synopsys/1.2v/scc65nll_hs_rvt_ss_v1p08_125c_ccs.db)
+
+Number of ports:                          131
+Number of nets:                         37121
+Number of cells:                        37017
+Number of combinational cells:          35224
+Number of sequential cells:              1793
+Number of macros/black boxes:               0
+Number of buf/inv:                       6430
+Number of references:                     165
+
+Combinational area:              83678.040641
+Buf/Inv area:                     8913.600216
+Noncombinational area:           18017.639871
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                101695.680512
+Total area:                 undefined
+1

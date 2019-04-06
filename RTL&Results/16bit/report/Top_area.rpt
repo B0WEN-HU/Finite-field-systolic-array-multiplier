@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : topcell
+Version: I-2013.12-SP3
+Date   : Sun Dec 16 11:55:49 2018
+****************************************
+
+Library(s) Used:
+
+    scc65nll_hs_rvt_ss_v1p08_125c_ccs (File: /net/dellr900b/export/SMIC_65nm_LL/SCC65NLL_HS/SCC65NLL_HS_RVT_syn_V1.1a/SCC65NLL_HS_RVT_V1p1a/synopsys/1.2v/scc65nll_hs_rvt_ss_v1p08_125c_ccs.db)
+
+Number of ports:                           67
+Number of nets:                         19232
+Number of cells:                        19177
+Number of combinational cells:          17480
+Number of sequential cells:              1697
+Number of macros/black boxes:               0
+Number of buf/inv:                       3199
+Number of references:                     158
+
+Combinational area:              41385.960369
+Buf/Inv area:                     4080.600127
+Noncombinational area:           17012.159879
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                 58398.120247
+Total area:                 undefined
+1
